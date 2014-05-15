@@ -1,0 +1,27 @@
+{
+  "name": "enb-bembundle",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "npm run-script jshint && npm run-script check-style",
+    "jshint": "jshint .",
+    "check-style": "jscs -c node_modules/enb-validate-code/jscs.json techs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/enb-make/enb-bembundle.git"
+  },
+  "author": "Marat Dulin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/enb-make/enb-bembundle/issues"
+  },
+  "homepage": "https://github.com/enb-make/enb-bembundle",
+  "peerDependencies": {
+    "enb": ">=0.8.45"
+  },
+  "devDependencies": {
+    "jscs": "~1.2.4",
+    "jshint": "~2.4.2",
+    "enb-validate-code": "0.0.1"
+  }
+}
