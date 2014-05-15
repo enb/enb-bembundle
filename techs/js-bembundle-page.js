@@ -26,7 +26,7 @@
  * ]);
  * ```
  */
-var Vow = require('vow');
+var vow = require('vow');
 
 module.exports = require('./js-bembundle-component').buildFlow()
     .name('js-bembundle-page')
@@ -34,7 +34,7 @@ module.exports = require('./js-bembundle-component').buildFlow()
     .methods({
         buildBundle: function (jsChunks, cssChunks) {
             var _this = this;
-            return Vow.when(this.buildJsBody(jsChunks)).then(function (jsBody) {
+            return vow.when(this.buildJsBody(jsChunks)).then(function (jsBody) {
                 return [
                     _this.__self.getOnceFunctionDecl(),
                     '\n',
