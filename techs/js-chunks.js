@@ -18,7 +18,7 @@
  * **Пример**
  *
  * ```javascript
- * nodeConfig.addTech(require('enb/techs/js-chunks'));
+ * nodeConfig.addTech(require('enb-bembundle/techs/js-chunks'));
  * ```
  */
 module.exports = require('../lib/chunks').buildFlow()

@@ -20,9 +20,9 @@
  * ```javascript
  * nodeConfig.addTechs([
  *   ...
- *   require('enb/techs/css-chunks'),
- *   require('enb/techs/js-chunks'),
- *   require('enb/techs/js-bundle-page')
+ *   require('enb-bembundle/techs/css-chunks'),
+ *   require('enb-bembundle/techs/js-chunks'),
+ *   require('enb-bembundle/techs/js-bundle-page')
  * ]);
  * ```
  */

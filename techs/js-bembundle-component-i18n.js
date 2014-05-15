@@ -22,22 +22,22 @@
  *
  * ```javascript
  * nodeConfig.addTechs([
- *   [ require('enb/techs/levels'), { levels: ... } ],
- *   require('enb/techs/files'),
- *   [ require('enb/techs/deps'), { depsTarget: 'router.tmp.deps.js' } ],
- *   [ require('enb/techs/deps-provider'), { sourceNodePath: 'pages/index', depsTarget: 'index.deps.js' } ],
- *   [ require('enb/techs/deps-subtract'), {
+ *   [ require('enb-bembundle/techs/levels'), { levels: ... } ],
+ *   require('enb-bembundle/techs/files'),
+ *   [ require('enb-bembundle/techs/deps'), { depsTarget: 'router.tmp.deps.js' } ],
+ *   [ require('enb-bembundle/techs/deps-provider'), { sourceNodePath: 'pages/index', depsTarget: 'index.deps.js' } ],
+ *   [ require('enb-bembundle/techs/deps-subtract'), {
  *     subtractWhatTarget: 'index.deps.js',
  *     subtractFromTarget: 'router.tmp.deps.js',
  *     depsTarget: 'router.deps.js'
  *   } ],
- *   require('enb/techs/css-chunks'),
- *   require('enb/techs/js-chunks'),
- *   [ require('enb/techs/i18n-merge-keysets'), { lang: 'all' } ],
- *   [ require('enb/techs/i18n-merge-keysets'), { lang: '{lang}' } ],
- *   [ require('enb/techs/i18n-lang-js-chunks'), { lang: 'all' } ],
- *   [ require('enb/techs/i18n-lang-js-chunks'), { lang: '{lang}' } ],
- *   [ require('enb/techs/js-bembundle-component-i18n'), { lang: '{lang}' } ]
+ *   require('enb-bembundle/techs/css-chunks'),
+ *   require('enb-bembundle/techs/js-chunks'),
+ *   [ require('enb-bembundle/techs/i18n-merge-keysets'), { lang: 'all' } ],
+ *   [ require('enb-bembundle/techs/i18n-merge-keysets'), { lang: '{lang}' } ],
+ *   [ require('enb-bembundle/techs/i18n-lang-js-chunks'), { lang: 'all' } ],
+ *   [ require('enb-bembundle/techs/i18n-lang-js-chunks'), { lang: '{lang}' } ],
+ *   [ require('enb-bembundle/techs/js-bembundle-component-i18n'), { lang: '{lang}' } ]
  * ]);
  * ```
  */

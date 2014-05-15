@@ -18,7 +18,7 @@
  * **Пример**
  *
  * ```javascript
- * nodeConfig.addTech(require('enb/techs/css-chunks'));
+ * nodeConfig.addTech(require('enb-bembundle/techs/css-chunks'));
  * ```
  */
 var path = require('path');
