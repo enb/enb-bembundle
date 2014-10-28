@@ -47,7 +47,7 @@ js-chunks
 nodeConfig.addTech(require('enb-bembundle/techs/js-chunks'));
 ```
 
-js-bundle-component
+js-bembundle-component
 -------------------
 
 Собирает `?.bembundle.js`-файл из `?.css-chunks.js` и `?.js-chunks.js`.
@@ -75,7 +75,7 @@ nodeConfig.addTechs([
   } ],
   require('enb-bembundle/techs/css-chunks'),
   require('enb-bembundle/techs/js-chunks'),
-  require('enb-bembundle/techs/js-bundle-component')
+  require('enb-bembundle/techs/js-bembundle-component')
 ]);
 ```
 
@@ -118,7 +118,7 @@ nodeConfig.addTechs([
 ]);
 ```
 
-js-bundle-page
+js-bembundle-page
 --------------
 
 Собирает страничный `?.js`-файл из `?.css-chunks.js` и `?.js-chunks.js`.
@@ -138,7 +138,7 @@ nodeConfig.addTechs([
   /* ... */
   require('enb-bembundle/techs/css-chunks'),
   require('enb-bembundle/techs/js-chunks'),
-  require('enb-bembundle/techs/js-bundle-page')
+  require('enb-bembundle/techs/js-bembundle-page')
 ]);
 ```
 
