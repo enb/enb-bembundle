@@ -1,6 +1,6 @@
 {
   "name": "enb-bembundle",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "scripts": {
     "test": "npm run-script jshint && npm run-script check-style",
     "jshint": "jshint .",
