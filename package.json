@@ -25,6 +25,8 @@
     "enb-validate-code": "0.0.1"
   },
   "dependencies": {
+    "borschik": "1.3.2",
+    "inherit": "2.2.1",
     "vow": "0.4.3"
   }
 }
