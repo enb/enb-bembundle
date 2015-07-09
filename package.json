@@ -27,7 +27,6 @@
   "dependencies": {
     "inherit": "2.2.1",
     "vow": "0.4.3",
-    "enb": "~0.15.0",
-    "enb-borschik": "~1.5.1"
+    "enb-borschik": "1.5.1"
   }
 }
