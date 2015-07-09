@@ -28,7 +28,7 @@
  * ```
  */
 var vowFs = require('enb/lib/fs/async-fs');
-var BorschikPreprocessor = require('../lib/borschik-preprocessor');
+var BorschikPreprocessor = require('enb-borschik/lib/borschik-preprocessor');
 
 module.exports = require('enb-bembundle/techs/css-chunks').buildFlow()
     .name('css-borschik-chunks')
