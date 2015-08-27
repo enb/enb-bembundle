@@ -1,6 +1,11 @@
 История изменений
 =================
 
+1.2.2
+-----
+
+* Исправлена технология `i18n-lang-js-chunks` ([#17]).
+
 1.2.1
 -----
 
@@ -13,5 +18,6 @@
 
 * Добавлена технология `css-borschik-chunks` ([#12]).
 
+[#16]: https://github.com/enb-make/enb-bembundle/issues/16
 [#13]: https://github.com/enb-make/enb-bembundle/issues/13
 [#12]: https://github.com/enb-make/enb-bembundle/pull/12
