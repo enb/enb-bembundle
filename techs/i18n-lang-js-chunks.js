@@ -23,11 +23,11 @@
  * ```
  */
 var Vow = require('vow');
-var dropRequireCache = require('../lib/fs/drop-require-cache');
+var dropRequireCache = require('enb/lib/fs/drop-require-cache');
 
-var I18NLangJs = require('./i18n-lang-js');
+var I18NLangJs = require('enb-bem-i18n/techs/i18n-lang-js');
 
-module.exports = require('../lib/tech/chunks').buildFlow()
+module.exports = require('../lib/chunks').buildFlow()
     .name('i18n-lang-js-chunks')
     .defineRequiredOption('lang')
     .target('target', '?.js-chunks.lang.{lang}.js')
