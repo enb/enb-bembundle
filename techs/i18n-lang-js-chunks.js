@@ -23,7 +23,7 @@
  * ```
  */
 var Vow = require('vow');
-var dropRequireCache = require('enb/lib/fs/drop-require-cache');
+var clearRequire = require('clear-require');
 
 var I18NLangJs = require('enb-bem-i18n/techs/i18n-lang-js');
 
@@ -34,7 +34,7 @@ module.exports = require('../lib/chunks').buildFlow()
     .unuseFileList()
     .useSourceFilename('keysetsTarget', '?.keysets.{lang}.js')
     .builder(function (keysetsFilename) {
-        dropRequireCache(require, keysetsFilename);
+        clearRequire(keysetsFilename);
         var keysets = require(keysetsFilename);
         var _this = this;
         var filename = this.node.resolvePath(this._target);

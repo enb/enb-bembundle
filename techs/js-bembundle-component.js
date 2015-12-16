@@ -35,7 +35,7 @@
  * ```
  */
 var Vow = require('vow');
-var dropRequireCache = require('enb/lib/fs/drop-require-cache');
+var clearRequire = require('clear-require');
 
 module.exports = require('enb/lib/build-flow').create()
     .name('js-bembundle-component')
@@ -46,11 +46,11 @@ module.exports = require('enb/lib/build-flow').create()
         var jsChunks = [];
         var cssChunks = [];
         cssChunkFilenames.forEach(function (cssChunksFilename) {
-            dropRequireCache(require, cssChunksFilename);
+            clearRequire(cssChunksFilename);
             cssChunks = cssChunks.concat(require(cssChunksFilename));
         });
         jsChunkFilenames.forEach(function (jsChunksFilename) {
-            dropRequireCache(require, jsChunksFilename);
+            clearRequire(jsChunksFilename);
             jsChunks = jsChunks.concat(require(jsChunksFilename));
         });
         return this.buildBundle(jsChunks, cssChunks);
