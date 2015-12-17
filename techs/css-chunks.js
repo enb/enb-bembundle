@@ -22,7 +22,7 @@
  * ```
  */
 var path = require('path');
-var CssPreprocessor = require('enb/lib/preprocess/css-preprocessor');
+var CssPreprocessor = require('enb-css-preprocessor');
 
 module.exports = require('../lib/chunks').buildFlow()
     .name('css-chunks')

@@ -3,6 +3,8 @@ enb-bembundle [![Build Status](https://travis-ci.org/enb-make/enb-bembundle.png?
 
 Предоставляет технологии для сборки `bembundle`-модулей.
 
+**Требования:** зависимость от пакета [enb](https://github.com/enb-make/enb) версии 0.16.0 или выше.
+
 css-chunks
 ----------
 

@@ -27,10 +27,11 @@
  * } ]);
  * ```
  */
-var vowFs = require('enb/lib/fs/async-fs');
+var enb = require('enb');
+var vowFs = enb.asyncFS || require('enb/lib/fs/async-fs');
 var borschik = require('borschik');
 
-module.exports = require('enb-bembundle/techs/css-chunks').buildFlow()
+module.exports = require('./css-chunks').buildFlow()
     .name('css-borschik-chunks')
     .defineOption('freeze', false)
     .defineOption('minify', false)

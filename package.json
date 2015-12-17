@@ -1,6 +1,6 @@
 {
   "name": "enb-bembundle",
-  "version": "1.2.2",
+  "version": "2.0.0",
   "scripts": {
     "test": "npm run-script jshint && npm run-script check-style",
     "jshint": "jshint .",
@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/enb-make/enb-bembundle",
   "peerDependencies": {
-    "enb": ">=0.8.45"
+    "enb": ">=0.16.0 <2.0.0"
   },
   "devDependencies": {
     "jscs": "~1.2.4",
@@ -26,7 +26,9 @@
   },
   "dependencies": {
     "borschik": "1.4.1",
-    "enb-bem-i18n": "^0.4.0",
+    "clear-require": "^1.0.1",
+    "enb-bem-i18n": "^0.5.0",
+    "enb-css-preprocessor": "^1.0.0",
     "inherit": "2.2.2",
     "vow": "0.4.10"
   }
